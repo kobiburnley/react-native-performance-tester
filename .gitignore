@@ -51,7 +51,3 @@ buck-out/
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
-
-logs-android.sh
-react-native-local-cli.sh
-run-android.sh

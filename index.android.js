@@ -19,7 +19,7 @@ export default class RNPerformanceTester extends Component {
     render() {
         return (
             <View style={{flex: 1, backgroundColor: "#5ee", padding: 20}}>
-                <YellowBrickReact/>
+                <YellowBrickReact />
                 <YellowBrickNative style={{height: 60, flexDirection: "row", justifyContent: "center", marginTop: 50}}/>
             </View>
         );

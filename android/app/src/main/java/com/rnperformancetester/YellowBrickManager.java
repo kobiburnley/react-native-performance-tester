@@ -3,7 +3,11 @@ package com.rnperformancetester;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 
-public class ReactYellowBrickManager extends SimpleViewManager<YellowBrick> {
+/**
+ * Created by kobi on 30/07/17.
+ */
+
+public class YellowBrickManager extends SimpleViewManager<YellowBrick> {
     @Override
     public String getName() {
         return "YellowBrick";

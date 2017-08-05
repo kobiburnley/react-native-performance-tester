@@ -1,5 +1,6 @@
 package com.rnperformancetester;
 
+
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
@@ -10,7 +11,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class YellowBrickPackage implements ReactPackage {
+public class NiceButtonPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         return Collections.emptyList();
@@ -23,6 +24,6 @@ public class YellowBrickPackage implements ReactPackage {
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-        return Arrays.<ViewManager>asList(new YellowBrickManager());
+        return Arrays.<ViewManager>asList(new NiceButtonManager());
     }
 }

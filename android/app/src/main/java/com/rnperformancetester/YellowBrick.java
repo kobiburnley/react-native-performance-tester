@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 
 import java.util.ArrayList;
@@ -18,7 +17,7 @@ import java.util.List;
 
 public class YellowBrick extends LinearLayout {
 
-    private List<Button> buttons = new ArrayList<>();
+    private List<NiceButton> buttons = new ArrayList<>();
 
     public YellowBrick(Context context) {
         super(context);
@@ -42,15 +41,15 @@ public class YellowBrick extends LinearLayout {
     }
 
     private Button createButton(int i) {
-        final Button button = new Button(getContext());
+        final NiceButton button = new NiceButton(getContext());
         button.setText(i + "");
         button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                for (Button b : buttons) {
+                for (NiceButton b : buttons) {
                     b.setBackgroundColor(Color.YELLOW);
-                    button.setBackgroundColor(Color.RED);
                 }
+                button.setBackgroundColor(Color.RED);
             }
         });
         button.setBackgroundColor(Color.YELLOW);
